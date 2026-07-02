@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+}
+
+h1{
+    font-size:60px;
+}
+
+h2{
+    color:#58a6ff;
+}

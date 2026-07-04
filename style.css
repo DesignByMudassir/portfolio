@@ -1417,41 +1417,147 @@ ul{
     opacity:1;
     transform:translateY(0);
 }
-/* ================= MOBILE FINAL FIX ================= */
+/* =====================================
+   MOBILE HERO - MA DESIGN ON TOP
+===================================== */
 
 @media(max-width:768px){
 
-    body{
-        overflow-x:hidden;
-    }
-
-    .container{
-        width:90%;
-    }
-
-    section{
-        padding:55px 0;
-    }
-
     .hero{
         min-height:auto;
-        padding:110px 0 55px;
+        padding:105px 0 55px;
+        overflow:hidden;
     }
 
     .hero-container{
+        display:flex;
         flex-direction:column;
-        gap:35px;
+        align-items:center;
         text-align:center;
+        gap:45px;
     }
 
-    .hero-content{
-        order:1;
-    }
-
+    /* MA Design First */
     .hero-image{
-        order:2;
+        order:1;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 
+    /* Text After MA Design */
+    .hero-content{
+        order:2;
+        width:100%;
+        max-width:100%;
+    }
+
+    /* Keep Full Circular Design */
+    .hero-circle{
+        position:relative;
+        width:360px;
+        height:360px;
+        margin:0 auto;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        transform:scale(.88);
+        transform-origin:center;
+    }
+
+    /* Restore Decorative Rings */
+    .hero-circle::before{
+        display:block;
+        content:"";
+        position:absolute;
+        inset:35px;
+        border:2px solid rgba(59,130,246,.18);
+        border-radius:50%;
+    }
+
+    .hero-circle::after{
+        display:block;
+        content:"";
+        position:absolute;
+        inset:0;
+        border:2px solid rgba(59,130,246,.08);
+        border-radius:50%;
+    }
+
+    /* MA Circle */
+    .profile-circle{
+        width:230px;
+        height:230px;
+        border-width:6px;
+        z-index:5;
+    }
+
+    .profile-logo{
+        font-size:82px;
+        letter-spacing:3px;
+    }
+
+    /* Restore Orbits */
+    .orbit{
+        display:block;
+    }
+
+    .orbit-1{
+        width:285px;
+        height:285px;
+    }
+
+    .orbit-2{
+        width:345px;
+        height:345px;
+    }
+
+    /* Restore Skill Badges */
+    .skill-badge{
+        display:block;
+        padding:9px 14px;
+        font-size:11px;
+        white-space:nowrap;
+        z-index:10;
+    }
+
+    /* Badge Positions */
+    .badge-1{
+        top:-5px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .badge-2{
+        top:90px;
+        right:-15px;
+    }
+
+    .badge-3{
+        bottom:70px;
+        right:-10px;
+    }
+
+    .badge-4{
+        bottom:-8px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .badge-5{
+        bottom:70px;
+        left:-15px;
+    }
+
+    .badge-6{
+        top:90px;
+        left:-18px;
+    }
+
+    /* Hero Text */
     .hero-content h1{
         font-size:36px;
     }
@@ -1475,201 +1581,9 @@ ul{
 
     .hero-buttons a{
         width:100%;
-        padding:13px 12px;
-        font-size:14px;
     }
 
     .hero-social{
         justify-content:center;
-    }
-
-    .hero-social a{
-        width:44px;
-        height:44px;
-    }
-
-    .hero-circle{
-        width:230px;
-        height:230px;
-        margin:auto;
-    }
-
-    .profile-circle{
-        width:180px;
-        height:180px;
-    }
-
-    .profile-logo{
-        font-size:62px;
-    }
-
-    .section-title{
-        margin-bottom:35px;
-    }
-
-    .section-title h2{
-        font-size:25px;
-        line-height:1.35;
-    }
-
-    .section-title span{
-        font-size:13px;
-    }
-
-    .about-wrapper{
-        gap:30px;
-    }
-
-    .image-box{
-        width:230px;
-        height:285px;
-    }
-
-    .about-content h3{
-        font-size:26px;
-    }
-
-    .about-content p{
-        font-size:14px;
-        line-height:1.7;
-    }
-
-    .about-details{
-        gap:12px;
-        margin:25px 0;
-    }
-
-    .detail{
-        padding:15px;
-        text-align:left;
-    }
-
-    .detail strong{
-        font-size:14px;
-    }
-
-    .detail span{
-        font-size:13px;
-    }
-
-    .stats{
-        padding:20px 0 50px;
-    }
-
-    .stats-grid{
-        gap:15px;
-    }
-
-    .stat-card{
-        padding:22px 15px;
-    }
-
-    .stat-card h2{
-        font-size:32px;
-    }
-
-    .stat-card p{
-        font-size:14px;
-    }
-
-    .services-grid,
-    .skills-wrapper,
-    .portfolio-grid,
-    .testimonial-wrapper{
-        gap:18px;
-    }
-
-    .service-card,
-    .skills-card,
-    .experience-card,
-    .testimonial-card{
-        padding:22px;
-        border-radius:18px;
-    }
-
-    .service-card i{
-        width:55px;
-        height:55px;
-        font-size:23px;
-        margin-bottom:18px;
-    }
-
-    .service-card h3,
-    .experience-card h3{
-        font-size:21px;
-    }
-
-    .service-card p,
-    .experience-card p,
-    .testimonial-card p{
-        font-size:14px;
-        line-height:1.7;
-    }
-
-    .card-title{
-        margin-bottom:22px;
-    }
-
-    .card-title i{
-        width:45px;
-        height:45px;
-    }
-
-    .card-title h3{
-        font-size:20px;
-    }
-
-    .skill-info{
-        font-size:13px;
-    }
-
-    .portfolio-card img{
-        height:220px;
-    }
-
-    .contact-wrapper{
-        gap:30px;
-    }
-
-    .contact-info h3{
-        font-size:26px;
-    }
-
-    .contact-info p{
-        font-size:14px;
-    }
-
-    .contact-item{
-        justify-content:flex-start;
-        text-align:left;
-        font-size:13px;
-    }
-
-    .contact-item i{
-        min-width:42px;
-        height:42px;
-        font-size:16px;
-    }
-
-    .footer{
-        padding:55px 0 25px;
-    }
-
-    .footer-logo{
-        font-size:25px;
-    }
-
-    .footer-col p,
-    .footer-col li,
-    .footer-col a{
-        font-size:14px;
-    }
-
-    #backToTop{
-        width:42px;
-        height:42px;
-        right:15px;
-        bottom:15px;
-        font-size:15px;
     }
 }

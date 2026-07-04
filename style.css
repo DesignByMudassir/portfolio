@@ -1418,7 +1418,7 @@ ul{
     transform:translateY(0);
 }
 /* =====================================
-   MOBILE HERO - MA DESIGN ON TOP
+   MOBILE HERO - MA DESIGN ON TOP FIXED
 ===================================== */
 
 @media(max-width:768px){
@@ -1434,10 +1434,9 @@ ul{
         flex-direction:column;
         align-items:center;
         text-align:center;
-        gap:45px;
+        gap:40px;
     }
 
-    /* MA Design First */
     .hero-image{
         order:1;
         width:100%;
@@ -1446,29 +1445,23 @@ ul{
         align-items:center;
     }
 
-    /* Text After MA Design */
     .hero-content{
         order:2;
         width:100%;
         max-width:100%;
     }
 
-    /* Keep Full Circular Design */
     .hero-circle{
         position:relative;
-        width:360px;
-        height:360px;
+        width:340px;
+        height:340px;
         margin:0 auto;
-
         display:flex;
         align-items:center;
         justify-content:center;
-
-        transform:scale(.88);
-        transform-origin:center;
+        transform:none;
     }
 
-    /* Restore Decorative Rings */
     .hero-circle::before{
         display:block;
         content:"";
@@ -1487,77 +1480,90 @@ ul{
         border-radius:50%;
     }
 
-    /* MA Circle */
     .profile-circle{
-        width:230px;
-        height:230px;
+        width:220px;
+        height:220px;
         border-width:6px;
         z-index:5;
     }
 
     .profile-logo{
-        font-size:82px;
+        font-size:80px;
         letter-spacing:3px;
     }
 
-    /* Restore Orbits */
     .orbit{
-        display:block;
+        display:block !important;
     }
 
     .orbit-1{
-        width:285px;
-        height:285px;
+        width:280px;
+        height:280px;
     }
 
     .orbit-2{
-        width:345px;
-        height:345px;
+        width:335px;
+        height:335px;
     }
 
-    /* Restore Skill Badges */
-    .skill-badge{
+    .dot{
         display:block;
-        padding:9px 14px;
+        width:10px;
+        height:10px;
+    }
+
+    .skill-badge{
+        display:block !important;
+        padding:8px 13px;
         font-size:11px;
         white-space:nowrap;
         z-index:10;
     }
 
-    /* Badge Positions */
     .badge-1{
-        top:-5px;
+        top:0;
         left:50%;
+        right:auto;
+        bottom:auto;
         transform:translateX(-50%);
     }
 
     .badge-2{
-        top:90px;
-        right:-15px;
+        top:95px;
+        right:-5px;
+        left:auto;
+        bottom:auto;
     }
 
     .badge-3{
-        bottom:70px;
-        right:-10px;
+        top:auto;
+        right:0;
+        bottom:75px;
+        left:auto;
     }
 
     .badge-4{
-        bottom:-8px;
+        top:auto;
         left:50%;
+        right:auto;
+        bottom:0;
         transform:translateX(-50%);
     }
 
     .badge-5{
-        bottom:70px;
-        left:-15px;
+        top:auto;
+        left:0;
+        right:auto;
+        bottom:75px;
     }
 
     .badge-6{
-        top:90px;
-        left:-18px;
+        top:95px;
+        left:-5px;
+        right:auto;
+        bottom:auto;
     }
 
-    /* Hero Text */
     .hero-content h1{
         font-size:36px;
     }
@@ -1581,9 +1587,42 @@ ul{
 
     .hero-buttons a{
         width:100%;
+        padding:13px 10px;
+        font-size:14px;
     }
 
     .hero-social{
         justify-content:center;
+    }
+}
+
+@media(max-width:380px){
+    .hero-circle{
+        width:310px;
+        height:310px;
+    }
+
+    .profile-circle{
+        width:200px;
+        height:200px;
+    }
+
+    .profile-logo{
+        font-size:70px;
+    }
+
+    .orbit-1{
+        width:255px;
+        height:255px;
+    }
+
+    .orbit-2{
+        width:305px;
+        height:305px;
+    }
+
+    .skill-badge{
+        font-size:10px;
+        padding:7px 10px;
     }
 }

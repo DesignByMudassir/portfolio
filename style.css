@@ -1626,36 +1626,3 @@ ul{
         padding:7px 10px;
     }
 }
-/* Show Download CV inside mobile menu */
-
-@media(max-width:1150px){
-    .nav-buttons{
-        display:flex;
-    }
-}
-@media(max-width:768px){
-    .nav-buttons{
-        display:flex;
-        position:fixed;
-        top:390px;
-        left:-100%;
-        width:100%;
-        padding:20px;
-        background:rgba(7,11,22,.98);
-        justify-content:center;
-        gap:12px;
-        transition:.35s;
-        z-index:1001;
-    }
-
-    .nav-menu.active ~ .nav-buttons{
-        left:0;
-    }
-
-    .resume-btn,
-    .nav-buttons .btn{
-        height:46px;
-        padding:0 16px;
-        font-size:13px;
-    }
-}

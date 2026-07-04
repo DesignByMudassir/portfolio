@@ -1633,7 +1633,6 @@ ul{
         display:flex;
     }
 }
-
 @media(max-width:768px){
     .nav-buttons{
         display:flex;

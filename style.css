@@ -353,6 +353,7 @@ ul{
     margin-bottom:20px;
     background:linear-gradient(90deg,#fff,#3B82F6);
     -webkit-background-clip:text;
+    background-clip:text;
     -webkit-text-fill-color:transparent;
 }
 
@@ -461,6 +462,7 @@ ul{
     font-weight:800;
     letter-spacing:5px;
     background:linear-gradient(135deg,#3B82F6,#8B5CF6);
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
